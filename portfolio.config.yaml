@@ -1,30 +1,17 @@
-# ╔══════════════════════════════════════════════════════════════════════╗
-# ║              GitVitae — Portfolio Configuration                      ║
-# ║  This is the only file you need to edit.                             ║
-# ║  Run  pnpm check-config  to catch mistakes before deploying.         ║
-# ╚══════════════════════════════════════════════════════════════════════╝
-
-siteMode: "portfolio"   # ← 改成 portfolio 了
-siteUrl:  "https://yuebanshengii.github.io"  # ← 你的 GitHub Pages URL
+siteMode: "portfolio"
+siteUrl: "https://yuebanshengii.github.io"
 showPoweredBy: false
 
-# ── Identity ─────────────────────────────────────────────────────────────
 name: "焦南胜"
 title: "上位机软件工程师"
-tagline: "C# / Modbus TCP / OpenCV / 工业自动化"
+tagline: "C# / Modbus TCP / OpenCV / YOLO / 工业自动化"
 email: "760214474@qq.com"
 phone: "13266107867"
 location: "广东东莞"
-avatarUrl: ""  # 留空显示姓名首字母
+avatarUrl: ""
 
-# ── Resume download ────────────────────────────────────────────────────
-resumeUrl: ""
-resumeFileName: ""
-
-# ── Status ─────────────────────────────────────────────────────────────
 openToWork: true
 
-# ── Theme ──────────────────────────────────────────────────────────────
 defaultTheme: "system"
 colorPreset: "indigo"
 
@@ -34,7 +21,6 @@ resumeTheme:
 
 contactFormEndpoint: ""
 
-# ── Section visibility ─────────────────────────────────────────────────
 sections:
   - { id: about,          show: true  }
   - { id: stats,          show: false }
@@ -48,27 +34,22 @@ sections:
   - { id: testimonials,   show: false }
   - { id: contact,        show: true  }
 
-# ── Social links ───────────────────────────────────────────────────────
 social:
-  github:   "https://github.com/yuebanshengii"
+  github: "https://github.com/yuebanshengii"
   linkedin: ""
-  twitter:  ""
-  website:  ""
+  twitter: ""
+  website: "https://yuebanshengii.github.io"
 
-# ── About ──────────────────────────────────────────────────────────────
 about: |
-  23岁，非科班出身，自学C#和Python完成了一个工业上位机项目。
+  23岁，非科班出身，自学C#和Python完成工业上位机项目。
   项目覆盖Modbus TCP通信、TCP/IP自定义协议、WinForms界面、
-  SQLite数据存储、OpenCV视觉定位和YOLO目标检测。
-  代码已托管在GitHub，功能可演示。
+  SQLite数据存储、OpenCV视觉定位、YOLO目标检测和WebAPI接口。
+  代码已托管在GitHub，功能可演示，项目已发布可运行版本。
 
-# ── Stats ──────────────────────────────────────────────────────────────
 stats: []
 
-# ── Languages ──────────────────────────────────────────────────────────
 languages: []
 
-# ── Skills ─────────────────────────────────────────────────────────────
 skills:
   - category: "编程语言"
     items: ["C#", "Python", "C++基础"]
@@ -77,11 +58,12 @@ skills:
   - category: "工业通信"
     items: ["Modbus TCP", "TCP/IP", "SCPI"]
   - category: "计算机视觉"
-    items: ["OpenCVSharp", "模板匹配", "YOLO"]
+    items: ["OpenCVSharp", "模板匹配", "YOLO目标检测"]
   - category: "数据库与工具"
     items: ["SQLite", "Git", "Visual Studio", "WSL"]
+  - category: "WebAPI"
+    items: ["ASP.NET Core Minimal API", "JSON接口"]
 
-# ── Experience ─────────────────────────────────────────────────────────
 experience:
   - company: "独立开发"
     role: "上位机软件开发"
@@ -95,6 +77,7 @@ experience:
       - SQLite历史数据存储与查询
       - WebAPI接口（/temperature、/yolo）提供JSON数据
       - 事件驱动 + 异步编程实现多线程安全
+      - 支持appsettings.json配置文件修改参数
 
   - company: "湖北嘉麟杰纺织品有限公司"
     role: "物测员"
@@ -105,38 +88,29 @@ experience:
       - 实验室检测与数据记录
       - 质量分析与报告编写
 
-# ── Projects ───────────────────────────────────────────────────────────
 projects:
   - name: "工业上位机监控系统"
     description: |
       C# WinForms开发的上位机监控系统，集成Modbus TCP通信、
       OpenCV视觉定位、YOLO目标检测、SQLite数据存储和WebAPI接口。
       实现温度采集→视觉定位→坐标下发→MES对接的完整链路。
-    tags: [C#, WinForms, Modbus TCP, OpenCV, YOLO, SQLite]
+      项目已发布可运行版本，支持配置文件修改参数。
+    tags: [C#, WinForms, Modbus TCP, OpenCV, YOLO, SQLite, WebAPI]
     liveUrl: ""
     repoUrl: "https://github.com/yuebanshengii/TempMonitorUI"
     featured: true
 
-# ── Education ──────────────────────────────────────────────────────────
 education:
   - institution: "武汉纺织大学"
     degree: "化学工程与工艺（本科·全日制）"
     period: "2020-09 – 2024-06"
 
-# ── Certifications ─────────────────────────────────────────────────────
 certifications: []
 
-# ── Publications ───────────────────────────────────────────────────────
 publications: []
 
-# ── Testimonials ───────────────────────────────────────────────────────
 testimonials: []
 
-# ── Analytics ──────────────────────────────────────────────────────────
-# analytics:
-#   goatcounterCode: ""
-
-# ── Blog ──────────────────────────────────────────────────────────────
 blog:
   enabled: false
   title: "Blog"
